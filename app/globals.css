@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #1f2a44;
+  --color-navy-deep: #161e33;
+  --color-gold: #c9a227;
+  --color-cream: #fbf6e6;
+  --color-ink: #1f2a44;
+  --color-muted: #5a6275;
+  --color-line: #e4e6eb;
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-serif-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 3px;
+}
