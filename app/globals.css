@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-paper: #f4efe6;
+  --color-paper-deep: #ebe4d7;
+  --color-ink: #1c1b19;
+  --color-forest: #2d4636;
+  --color-forest-deep: #22362a;
+  --color-clay: #b5653c;
+  --color-stone: #6e6a62;
+  --color-line: #d9d2c5;
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-fraunces);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-clay);
+  outline-offset: 3px;
+}
