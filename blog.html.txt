@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3-Bed Home for Sale in Riverside Heights, Sacramento</title>
+<meta name="description" content="1482 Alder Lane, Riverside Heights: 3 bed, 2 bath, 1,640 sq ft with a new 2023 roof, updated kitchen and fenced backyard. Listed at $489,000. Open house Oct 10.">
+<style>
+  :root {
+    --navy: #1F2A44;
+    --gold: #C9A227;
+    --soft: #5A6275;
+    --line: #E4E6EB;
+    --white: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--white);
+    color: var(--navy);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  a { color: var(--navy); }
+  a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+  .menu {
+    background: var(--navy);
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .brand { color: var(--white); font-family: Georgia, "Times New Roman", serif; font-size: 18px; }
+  .menu nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 18px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+  }
+  .menu nav a[aria-current="page"] { border-bottom-color: var(--gold); }
+
+  article { max-width: 680px; margin: 0 auto; padding: 36px 20px 10px; }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    font-size: clamp(32px, 7vw, 46px);
+    line-height: 1.12;
+    margin: 0 0 14px;
+  }
+  .byline { color: var(--soft); font-size: 15px; margin: 0 0 26px; padding-bottom: 18px; border-bottom: 3px solid var(--gold); display: inline-block; }
+  .lead { font-size: 20px; }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 1.25;
+    margin: 38px 0 10px;
+  }
+  .photo { margin: 26px 0 6px; }
+  .photo img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: var(--navy); }
+  .photo figcaption { font-size: 15px; color: var(--soft); padding-top: 6px; }
+
+  /* The one sourced number. Replace the placeholder before publishing. */
+  .market { background: #FBF6E6; border-left: 5px solid var(--gold); padding: 16px 18px; margin: 14px 0; }
+  .market p { margin: 0; }
+  .source { font-size: 15px; color: var(--soft); margin-top: 6px !important; }
+
+  .open-house { background: var(--navy); color: var(--white); padding: 22px 22px; margin: 34px 0 0; }
+  .open-house h2 { color: var(--white); margin: 0 0 6px; }
+  .open-house p { margin: 0; }
+  .contact { padding: 26px 0 0; }
+  .contact strong { font-family: Georgia, "Times New Roman", serif; font-weight: normal; font-size: 22px; display: block; }
+
+  footer { max-width: 680px; margin: 30px auto 0; padding: 18px 20px 30px; border-top: 1px solid var(--line); color: var(--soft); font-size: 14px; }
+
+  @media (max-width: 560px) {
+    body { font-size: 17px; }
+    .lead { font-size: 18px; }
+    .menu nav a { margin-left: 0; margin-right: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="menu">
+  <span class="brand">Reyes Home Group</span>
+  <nav>
+    <a href="index.html">Listing</a>
+    <a href="blog.html" aria-current="page">Blog</a>
+  </nav>
+</header>
+
+<article>
+  <h1>Homes for Sale in Riverside Heights: A Look at 1482 Alder Lane</h1>
+  <p class="byline">By Dana Reyes, Reyes Home Group</p>
+
+  <p class="lead">If you are looking at homes for sale in Riverside Heights, Sacramento, here is one to know about. 1482 Alder Lane is a 3 bed, 2 bath home with 1,640 sq ft of space. It is listed at $489,000. In this post I share what the house offers, what has been updated, and when you can come and see it.</p>
+
+  <figure class="photo">
+    <img src="photos/front.jpg" alt="Front of 1482 Alder Lane">
+    <figcaption>1482 Alder Lane, Riverside Heights</figcaption>
+  </figure>
+
+  <h2>The house at a glance</h2>
+  <p>The home was built in 1998. It has 3 bedrooms and 2 bathrooms, with 1,640 sq ft of living space. There is a 2-car garage, so you have room for two cars or extra storage.</p>
+  <p>One of the biggest updates is the roof. It is new from 2023. A roof is one of the costly parts of a home, so it is good to know it has been done recently.</p>
+
+  <p>The kitchen was updated in 2021. It has quartz counters and a gas range. When you visit, take a few minutes in this room. Look at the counter space and how the kitchen connects to the rest of the house.</p>
+
+  <figure class="photo">
+    <img src="photos/kitchen.jpg" alt="Kitchen with quartz counters and a gas range">
+    <figcaption>The kitchen, updated in 2021</figcaption>
+  </figure>
+
+  <h2>The backyard and Alder Park</h2>
+  <p>Out back, the yard is fenced, and there is a lemon tree. It is a simple, private outdoor space.</p>
+  <p>Alder Park is about a 10-minute walk from the house. If you like to walk, it is close enough to get there on foot.</p>
+
+  <figure class="photo">
+    <img src="photos/backyard.jpg" alt="Fenced backyard with a lemon tree">
+    <figcaption>The fenced backyard, with its lemon tree</figcaption>
+  </figure>
+
+  <h2>Homes for sale in Riverside Heights: the market right now</h2>
+  <p>Before you buy, it helps to know what homes in the area cost.</p>
+  <div class="market">
+    <p>[MARKET FACT: the current Sacramento median home price, from your Perplexity research. One sentence. No "good deal", no prediction.]</p>
+    <p class="source">Source: [source name], [month and year]</p>
+  </div>
+  <p>Prices change from month to month, so check the date on any number you read. Every home is different. The best way to judge 1482 Alder Lane is to see it in person, walk through each room, and ask your questions.</p>
+
+  <section class="open-house">
+    <h2>Come to the open house</h2>
+    <p>Saturday, October 10, 1&ndash;4 pm, at 1482 Alder Lane.</p>
+  </section>
+
+  <p style="margin-top:22px">When you visit, bring your questions. Look at the new roof and the kitchen updates for yourself. Check the space in the 2-car garage, and walk around the fenced backyard. It helps to take a few photos and notes, so you can compare homes later. If you are working with a lender, bring your pre-approval letter too. Then we can talk about next steps on the day.</p>
+  <p>If you cannot make it on Saturday, that is fine. Get in touch and we can find another time for a viewing.</p>
+
+  <div class="contact">
+    <strong>Dana Reyes, Reyes Home Group</strong>
+    (555) 014-2290
+    <p>If you have questions about the home, or want to book a viewing, get in touch. <a href="index.html">See the full listing and photos</a>.</p>
+  </div>
+</article>
+
+<footer>Dana Reyes, Reyes Home Group &bull; (555) 014-2290</footer>
+
+</body>
+</html>

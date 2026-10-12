@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1482 Alder Lane, Riverside Heights | Reyes Home Group</title>
+<meta name="description" content="1482 Alder Lane, Riverside Heights, Sacramento: 3 bed, 2 bath, 1,640 sq ft. New roof 2023, kitchen updated 2021, fenced backyard. Listed at $489,000.">
+<style>
+  :root {
+    --navy: #1F2A44;
+    --gold: #C9A227;
+    --ink: #1F2A44;
+    --soft: #5A6275;
+    --line: #E4E6EB;
+    --white: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--white);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--navy); }
+  a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+  /* Menu */
+  .menu {
+    background: var(--navy);
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .brand { color: var(--white); font-family: Georgia, "Times New Roman", serif; font-size: 18px; }
+  .menu nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 18px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+  }
+  .menu nav a[aria-current="page"] { border-bottom-color: var(--gold); }
+
+  /* Hero: the house itself */
+  .hero { position: relative; background: var(--navy); }
+  .hero img {
+    display: block;
+    width: 100%;
+    height: 62vh;
+    min-height: 300px;
+    max-height: 560px;
+    object-fit: cover;
+  }
+  .hero-text {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 60px 20px 22px;
+    background: linear-gradient(to top, rgba(31,42,68,0.92), rgba(31,42,68,0));
+    color: var(--white);
+  }
+  .hero-text .wrap { max-width: 900px; margin: 0 auto; }
+  .hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    font-size: clamp(34px, 8vw, 58px);
+    line-height: 1.05;
+    margin: 0 0 6px;
+  }
+  .hero .place { margin: 0; font-size: 17px; opacity: 0.9; }
+  .price {
+    display: inline-block;
+    margin-top: 12px;
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 22px;
+    padding: 4px 14px;
+  }
+
+  main { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+  /* The four numbers buyers look for first */
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid var(--line);
+    margin: 0;
+    padding: 0;
+  }
+  .facts div { padding: 20px 0 18px; text-align: center; border-right: 1px solid var(--line); }
+  .facts div:last-child { border-right: none; }
+  .facts dt { font-size: 14px; color: var(--soft); }
+  .facts dd { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 28px; }
+
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    font-size: 28px;
+    margin: 40px 0 12px;
+  }
+  .features { list-style: none; padding: 0; margin: 0; }
+  .features li { padding: 12px 0 12px 22px; border-bottom: 1px solid var(--line); position: relative; }
+  .features li::before {
+    content: "";
+    position: absolute; left: 0; top: 22px;
+    width: 9px; height: 9px;
+    background: var(--gold);
+  }
+
+  .photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+  figure { margin: 0; }
+  .photos img {
+    display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+    background: var(--navy);
+  }
+  figcaption { font-size: 15px; color: var(--soft); padding-top: 6px; }
+
+  .open-house {
+    margin: 44px 0 0;
+    background: var(--navy);
+    color: var(--white);
+    padding: 26px 24px;
+    border-left: 6px solid var(--gold);
+  }
+  .open-house h2 { margin: 0 0 6px; color: var(--white); }
+  .open-house p { margin: 0; font-size: 19px; }
+
+  .contact { padding: 30px 0 10px; font-size: 18px; }
+  .contact strong { display: block; font-family: Georgia, "Times New Roman", serif; font-weight: normal; font-size: 22px; }
+  .blog-link { display: inline-block; margin-top: 14px; font-weight: 600; }
+
+  footer { max-width: 900px; margin: 30px auto 0; padding: 18px 20px 30px; border-top: 1px solid var(--line); color: var(--soft); font-size: 14px; }
+
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .facts { grid-template-columns: 1fr 1fr; }
+    .facts div:nth-child(2) { border-right: none; }
+    .facts div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .photos { grid-template-columns: 1fr; }
+    .menu nav a { margin-left: 0; margin-right: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="menu">
+  <span class="brand">Reyes Home Group</span>
+  <nav>
+    <a href="index.html" aria-current="page">Listing</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="photos/front.jpg" alt="Front of 1482 Alder Lane">
+  <div class="hero-text">
+    <div class="wrap">
+      <h1>1482 Alder Lane</h1>
+      <p class="place">Riverside Heights, Sacramento</p>
+      <span class="price">$489,000</span>
+    </div>
+  </div>
+</section>
+
+<main>
+  <dl class="facts">
+    <div><dt>Bedrooms</dt><dd>3</dd></div>
+    <div><dt>Bathrooms</dt><dd>2</dd></div>
+    <div><dt>Square feet</dt><dd>1,640</dd></div>
+    <div><dt>Built</dt><dd>1998</dd></div>
+  </dl>
+
+  <h2>About the home</h2>
+  <ul class="features">
+    <li>New roof in 2023</li>
+    <li>Kitchen updated in 2021, with quartz counters and a gas range</li>
+    <li>Fenced backyard with a lemon tree</li>
+    <li>2-car garage</li>
+    <li>About a 10-minute walk to Alder Park</li>
+  </ul>
+
+  <h2>Photos</h2>
+  <div class="photos">
+    <figure>
+      <img src="photos/kitchen.jpg" alt="Kitchen with quartz counters and a gas range">
+      <figcaption>Kitchen, updated in 2021</figcaption>
+    </figure>
+    <figure>
+      <img src="photos/backyard.jpg" alt="Fenced backyard with a lemon tree">
+      <figcaption>Fenced backyard with a lemon tree</figcaption>
+    </figure>
+  </div>
+
+  <section class="open-house">
+    <h2>Open house</h2>
+    <p>Saturday, October 10, 1&ndash;4 pm</p>
+  </section>
+
+  <div class="contact">
+    <strong>Dana Reyes, Reyes Home Group</strong>
+    (555) 014-2290
+    <br>
+    <a class="blog-link" href="blog.html">Read more about this home on the blog</a>
+  </div>
+</main>
+
+<footer>Dana Reyes, Reyes Home Group &bull; (555) 014-2290</footer>
+
+</body>
+</html>
