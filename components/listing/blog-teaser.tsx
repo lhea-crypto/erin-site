@@ -1,24 +1,40 @@
+import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
+import { listing } from "@/lib/listing"
 
 export function BlogTeaser() {
   return (
-    <section className="bg-cream">
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-12 md:flex-row md:items-center md:justify-between">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">From the blog</p>
-          <h2 className="mt-2 font-serif text-2xl text-balance md:text-3xl">
-            Homes for Sale in Riverside Heights: A Look at 1482 Alder Lane
-          </h2>
+    <section aria-labelledby="journal-heading" className="mx-auto max-w-6xl px-5 py-16 lg:py-24">
+      <Link
+        href="/blog"
+        className="group grid overflow-hidden rounded-3xl border border-line bg-paper transition-colors hover:border-ink/30 md:grid-cols-[2fr_3fr]"
+      >
+        <div className="relative aspect-[16/10] md:aspect-auto">
+          <Image
+            src={listing.photos.kitchen.src}
+            alt=""
+            fill
+            sizes="(min-width: 768px) 440px, 100vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
-        <Link
-          href="/blog"
-          className="group flex shrink-0 items-center gap-2 self-start font-semibold underline decoration-gold decoration-2 underline-offset-4 md:self-auto"
-        >
-          Read more about this home
-          <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-        </Link>
-      </div>
+        <div className="flex flex-col justify-between gap-8 p-8">
+          <div>
+            <p className="text-sm font-medium text-clay">From the journal</p>
+            <h2 id="journal-heading" className="mt-3 font-serif text-3xl leading-tight text-balance">
+              Homes for Sale in Riverside Heights: A Look at 1482 Alder Lane
+            </h2>
+          </div>
+          <span className="flex items-center gap-2 font-semibold">
+            Read the full story
+            <ArrowUpRight
+              className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              aria-hidden="true"
+            />
+          </span>
+        </div>
+      </Link>
     </section>
   )
 }

@@ -1,33 +1,58 @@
 import Image from "next/image"
-import { listing } from "@/lib/listing"
+import { CalendarDays, Phone } from "lucide-react"
+import { agent, listing } from "@/lib/listing"
+import { ListingFacts } from "./facts"
 
 export function ListingHero() {
   return (
-    <section className="relative bg-navy">
-      <div className="relative h-[62vh] min-h-80 max-h-[600px] w-full">
+    <section className="mx-auto grid max-w-6xl gap-10 px-5 pt-10 pb-16 lg:grid-cols-[5fr_6fr] lg:items-center lg:gap-14 lg:pt-16">
+      <div className="flex flex-col">
+        <p className="flex items-center gap-2 text-sm font-medium text-stone">
+          <span aria-hidden="true" className="size-2 rounded-full bg-clay" />
+          For sale in {listing.neighborhood}
+        </p>
+        <h1 className="mt-5 font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-7xl">
+          {listing.address}
+        </h1>
+        <p className="mt-4 text-lg text-stone">
+          A {listing.facts[0].value}-bedroom home in {listing.city} with a new roof, an updated kitchen, and a fenced
+          yard with a lemon tree.
+        </p>
+
+        <p className="mt-8 font-serif text-4xl text-forest">
+          <span className="sr-only">Listed at </span>
+          {listing.price}
+        </p>
+
+        <ListingFacts />
+
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a
+            href={agent.phoneHref}
+            className="flex items-center justify-center gap-2 rounded-full bg-forest px-6 py-3.5 font-semibold text-paper transition-colors hover:bg-forest-deep"
+          >
+            <Phone className="size-4" aria-hidden="true" />
+            Book a viewing
+          </a>
+          <a
+            href="#open-house"
+            className="flex items-center justify-center gap-2 rounded-full border border-ink/20 px-6 py-3.5 font-semibold transition-colors hover:border-ink"
+          >
+            <CalendarDays className="size-4" aria-hidden="true" />
+            Open house {listing.openHouse.day.split(",")[0]}
+          </a>
+        </div>
+      </div>
+
+      <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-paper-deep lg:aspect-[5/6]">
         <Image
           src={listing.photos.front.src}
           alt={listing.photos.front.alt}
           fill
           priority
-          sizes="100vw"
+          sizes="(min-width: 1024px) 600px, 100vw"
           className="object-cover"
         />
-      </div>
-      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/95 via-navy/60 to-transparent pt-24 pb-8 text-white">
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 md:flex-row md:items-end md:justify-between">
-          <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold">For sale</p>
-            <h1 className="font-serif text-4xl leading-none text-balance md:text-6xl">{listing.address}</h1>
-            <p className="mt-2 text-white/85 md:text-lg">
-              {listing.neighborhood}, {listing.city}
-            </p>
-          </div>
-          <p className="self-start bg-gold px-4 py-1.5 text-2xl font-bold text-navy md:self-auto md:text-3xl">
-            <span className="sr-only">Listed at </span>
-            {listing.price}
-          </p>
-        </div>
       </div>
     </section>
   )

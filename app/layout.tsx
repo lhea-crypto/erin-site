@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next"
-import { Inter, Source_Serif_4 } from "next/font/google"
+import { Fraunces, Manrope } from "next/font/google"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
-const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif-display" })
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" })
+const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces" })
 
 export const metadata: Metadata = {
   title: {
@@ -17,12 +17,12 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: "#1f2a44",
+  themeColor: "#f4efe6",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${serif.variable}`}>
+    <html lang="en" className={`${manrope.variable} ${fraunces.variable}`}>
       <body className="font-sans antialiased">
         <SiteHeader />
         {children}

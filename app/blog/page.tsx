@@ -17,11 +17,11 @@ function H2({ children }: { children: React.ReactNode }) {
 export default function BlogPage() {
   return (
     <main>
-      <article className="mx-auto max-w-2xl px-5 py-12 text-lg leading-relaxed">
+      <article className="mx-auto max-w-[720px] px-5 py-16 text-lg leading-relaxed">
         <h1 className="font-serif text-4xl leading-tight text-balance md:text-5xl">
           Homes for Sale in Riverside Heights: A Look at 1482 Alder Lane
         </h1>
-        <p className="mt-4 inline-block border-b-[3px] border-gold pb-4 text-sm text-muted">
+        <p className="mt-4 inline-block border-b border-line pb-4 text-sm text-stone">
           By {agent.name}, {agent.company}
         </p>
 
@@ -61,9 +61,9 @@ export default function BlogPage() {
         <H2>Homes for sale in Riverside Heights: the market right now</H2>
         <p>Before you buy, it helps to know what homes in the area cost.</p>
         {marketFact && (
-          <div className="my-4 border-l-[5px] border-gold bg-cream px-5 py-4">
+          <div className="my-4 rounded-2xl bg-paper-deep px-5 py-4">
             <p>{marketFact.text}</p>
-            <p className="mt-1 text-sm text-muted">Source: {marketFact.source}</p>
+            <p className="mt-1 text-sm text-stone">Source: {marketFact.source}</p>
           </div>
         )}
         <p className="mt-4">
@@ -71,11 +71,11 @@ export default function BlogPage() {
           best way to judge 1482 Alder Lane is to see it in person, walk through each room, and ask your questions.
         </p>
 
-        <section aria-labelledby="open-house-heading" className="mt-10 border-l-[6px] border-gold bg-navy p-6 text-white">
+        <section aria-labelledby="open-house-heading" className="mt-10 rounded-3xl bg-forest p-8 text-paper">
           <h2 id="open-house-heading" className="font-serif text-2xl">
             Come to the open house
           </h2>
-          <p className="mt-1 text-white/85">
+          <p className="mt-1 text-paper/80">
             {listing.openHouse.day}, {listing.openHouse.time}, at {listing.address}.
           </p>
         </section>
@@ -90,24 +90,24 @@ export default function BlogPage() {
           If you cannot make it on Saturday, that is fine. Get in touch and we can find another time for a viewing.
         </p>
 
-        <div className="mt-10 border border-line p-6">
+        <div className="mt-10 rounded-3xl border border-line p-8">
           <p className="font-serif text-2xl">
             {agent.name}, {agent.company}
           </p>
-          <p className="mt-2 text-base text-muted">
+          <p className="mt-2 text-base text-stone">
             If you have questions about the home, or want to book a viewing, get in touch.
           </p>
           <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
             <a
               href={agent.phoneHref}
-              className="flex items-center justify-center gap-2 bg-navy px-5 py-3 text-base font-semibold text-white transition-colors hover:bg-navy-deep"
+              className="flex items-center justify-center gap-2 rounded-full bg-forest px-6 py-3 text-base font-semibold text-paper transition-colors hover:bg-forest-deep"
             >
               <Phone className="size-4" aria-hidden="true" />
               {agent.phone}
             </a>
             <Link
               href="/"
-              className="text-base font-semibold underline decoration-gold decoration-2 underline-offset-4"
+              className="text-base font-semibold underline decoration-clay decoration-2 underline-offset-4"
             >
               See the full listing and photos
             </Link>

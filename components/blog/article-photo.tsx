@@ -9,11 +9,11 @@ type ArticlePhotoProps = {
 
 export function ArticlePhoto({ src, alt, caption, priority }: ArticlePhotoProps) {
   return (
-    <figure className="my-8">
-      <div className="relative aspect-[3/2] overflow-hidden bg-navy">
-        <Image src={src} alt={alt} fill priority={priority} sizes="(min-width: 672px) 632px, 100vw" className="object-cover" />
+    <figure className="my-10">
+      <div className="relative aspect-[3/2] overflow-hidden rounded-3xl bg-paper-deep">
+        <Image src={src} alt={alt} fill priority={priority} sizes="(min-width: 720px) 680px, 100vw" className="object-cover" />
       </div>
-      <figcaption className="pt-2 text-sm text-muted">{caption}</figcaption>
+      <figcaption className="pt-3 text-sm text-stone">{caption}</figcaption>
     </figure>
   )
 }
